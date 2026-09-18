@@ -1,7 +1,23 @@
 const CUSTOMER_SITES = {
-    qiqi: {
-        api: 'https://www.qiqidys.com/api.php/provide/vod',
-        name: '七七资源',
+    liangzi: {
+        api: 'https://cj.lziapi.com/api.php/provide/vod',
+        name: '量子高清',
+    },
+    feifan: {
+        api: 'https://api.ffzyapi.com/api.php/provide/vod',
+        name: '非凡专线',
+    },
+    baofeng: {
+        api: 'https://bfzyapi.com/api.php/provide/vod',
+        name: '暴风影视',
+    },
+    suoni: {
+        api: 'https://suoniapi.com/api.php/provide/vod',
+        name: '索尼资源',
+    },
+    jisu: {
+        api: 'https://jszyapi.com/api.php/provide/vod',
+        name: '极速快线',
     }
 };
 
@@ -9,5 +25,5 @@ const CUSTOMER_SITES = {
 if (window.extendAPISites) {
     window.extendAPISites(CUSTOMER_SITES);
 } else {
-    console.error("错误：请先加载 config.js！");
+    console.error('错误：请先加载 config.js！');
 }
